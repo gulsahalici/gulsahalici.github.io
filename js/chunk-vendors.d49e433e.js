@@ -1646,4 +1646,4 @@ var r=function(e,t){return r=Object.setPrototypeOf||{__proto__:[]}instanceof Arr
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */var p=function(){function e(e){this.name=e,this.providers=new Map}return e.prototype.addComponent=function(e){var t=this.getProvider(e.name);if(t.isComponentSet())throw new Error("Component "+e.name+" has already been registered with "+this.name);t.setComponent(e)},e.prototype.addOrOverwriteComponent=function(e){var t=this.getProvider(e.name);t.isComponentSet()&&this.providers.delete(e.name),this.addComponent(e)},e.prototype.getProvider=function(e){if(this.providers.has(e))return this.providers.get(e);var t=new d(e,this);return this.providers.set(e,t),t},e.prototype.getProviders=function(){return Array.from(this.providers.values())},e}()}}]);
-//# sourceMappingURL=chunk-vendors.4e1d997c.js.map
+//# sourceMappingURL=chunk-vendors.d49e433e.js.map
