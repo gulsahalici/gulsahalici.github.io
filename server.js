@@ -2,7 +2,7 @@ const express = require('express')
 const path = require('path')
 
 const app = express()
-const port = process.env.PORT || 3000
+const port = 4000
 
 // dist klasörünü statik olarak sun
 app.use(express.static(path.join(__dirname, 'dist')))
